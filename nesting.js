@@ -50,12 +50,7 @@ var employees = [
     3. Return the updated employee array.
 */
 
-function employeeUpdater() {
-//   for (let i = 0; ) {
-
-//   }
-// }
-
+///// code here 
 
 
 ////////// PROBLEM 2 //////////
