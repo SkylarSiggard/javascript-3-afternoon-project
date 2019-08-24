@@ -158,14 +158,13 @@ var myCar = {
 
 function recordCleaner() {
   for (let i = 0; i < myCar.accidents.length; i++) {
-    if (myCar.accidents.atFaultForAccident === true) {
-      myCar.accidentst.FaultForAccident.splice(0, 1, false)
+    if (myCar.accidents[i].atFaultForAccident === true) {
+      console.log(myCar.accidents[i].atFaultForAccident)
+     myCar.accidents[i].atFaultForAccident = false
     }  
   } 
 }
-
-// const change1 = myCar.accidents.atFaultForAccident[0]
-// console.log(change1)
+recordCleaner()
 
 
 
@@ -184,17 +183,16 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-function looper(arr) {
-  for (i = 0; i < arr.length; i++) {
-    for (j = 0; j < arr[i].length; j++) {
-      if (arr[i][j] % 2 !== 0) {
-        arr[i][j] = 'odd'
-      }
-      else {
-        arr[i][j] = 'even'
+function looper(arr){
+  for (let i = 0; i < numsArr.length; i++){
+    for (let j = 0; j < arr[i].length; j++){
+      if(arr[i][j] % 2 !== 0){
+        arr[i][j] = 'odd';
+      } else{
+        arr[i][j] = 'even';
       }
     }
   }
-  return arr;
+  return numsArr;
 }
-
+looper(numsArr);
